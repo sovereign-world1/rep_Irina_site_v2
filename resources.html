@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Репетитор по химии | Шакирова Ирина Хабировна</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Раскрывающееся меню -->
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section id="resources">
+            <h2>Полезные ресурсы</h2>
+            <!-- Литература, шпаргалки, видеоуроки и инструменты остаются без изменений -->
+             <!-- Литература -->
+            <div class="resource-category">
+                <h3>Литература</h3>
+                <div class="resource">
+                    <h4>Для ЕГЭ</h4>
+                    <ul>
+                        <li><a href="https://externat.foxford.ru/polezno-znat/kak-podgotovitsya-k" class="button">Химия. Подготовка к ЕГЭ.</a></li>
+                        <li><a href="https://co8a.ru/%D0%B5%D0%B3%D1%8D-2024-%D0%BF%D0%BE-%D1%85%D0%B8%D0%BC%D0%B8%D0%B8-%D0%B4-%D1%8E-%D0%B4%D0%BE%D0%B1%D1%80%D0%BE%D1%82%D0%B8%D0%BD-30-%D1%83%D1%87%D0%B5%D0%B1%D0%BD%D1%8B%D1%85-%D0%B2%D0%B0%D1%80/" class="button">Химия. Подготовка к ЕГЭ. Типовые экзаменационные варианты. Ю. А. Сивухина</a></li>
+                    </ul>
+                </div>
+                <div class="resource">
+                    <h4>Для ОГЭ</h4>
+                    <ul>
+                        <li><a href="https://media.foxford.ru/articles/chemistry-oge" class="button">Химия. Подготовка к ОГЭ.</a></li>
+                        <li><a href="https://www.labirint.ru/books/979109/" class="button">Химия. Типовые экзаменационные варианты. ОГЭ.</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Шпаргалки -->
+            <div class="resource-category">
+                <h3>Шпаргалки по химии</h3>
+                <div class="resource">
+                    <ul>
+                        <li><a href="https://dpva.ru/Guide/GuideChemistry/ChemiaForKids/ChemShpora/" class="button">Общие шпаргалки по химии</a></li>
+                        <li><a href="https://4ege.ru/materials_podgotovka/59895-shpargalka-po-himii.html" class="button">Шпаргалка для подготовки к ЕГЭ</a></li>
+                        <li><a href="https://4ege.ru/gia-po-himii/69104-shpargalka-k-pervoj-chasti-oge-po-himii.html" class="button">Шпаргалка для подготовки к ОГЭ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Видеоуроки -->
+            <div class="resource-category">
+                <h3>Видеоуроки по химии (Rutube)</h3>
+                <div class="resource">
+                    <ul>
+                        <li><a href="https://rutube.ru/video/c99e15a8ced0b535fbaaea57725d77df/" class="button">Основы органической химии</a></li>
+                        <li><a href="https://rutube.ru/video/621d1dcf7c73c55a42828227a6aeb17d/" class="button">Периодическая система элементов</a></li>
+                        <li><a href="https://rutube.ru/video/38dad50d278172197a3e527cd7514421/" class="button">Химические реакции</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Интерактивные инструменты -->
+            <div class="resource-category">
+                <h3>Интерактивные инструменты</h3>
+                <div class="resource">
+                    <h4>Интерактивная таблица Менделеева</h4>
+                    <button onclick="window.location.href='https://ptable.com/?lang=ru#%D0%A1%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0'" class="interactive-button">Открыть таблицу</button>
+                </div>
+                <div class="resource">
+                    <h4>Входной тест по химии</h4>
+                    <button onclick="window.location.href='https://moeobrazovanie.ru/viktoriny/test_po_himii_elementy.html?test_start&operation=exrc_show'" class="interactive-button">Пройти тест</button>
+                    <button onclick="window.location.href='Mendeleyev_2.1.1.exe'" class="interactive-button">Скачать таблицу</button>
+                </div>
+            </div>
+        </section>
+        <!-- Интерактивная игра -->
+        <!-- <section id="game">
+            <h2>Интерактивная игра по химии</h2>
+            <p>Проверьте свои знания о химических элементах!</p>
+            <iframe src="https://www.crazygames.ru/igra/little-alchemy" width="100%" height="500px" frameborder="0"></iframe>
+        </section> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Репетитор по химии | Шакирова Ирина Хабировна</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

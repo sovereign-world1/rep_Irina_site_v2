@@ -1,0 +1,241 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 1000;
+    padding: 50;
+    line-height: 2,5;
+    color: rgb(243, 238, 239);
+
+    /* Фоновое изображение */
+    background-image: url("fon_kolba_voda.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Размеры шрифта */
+h1 {
+    font-size: 2.5rem; /* Более крупный заголовок */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для лучшей видимости */
+}
+
+h2 {
+    font-size: 1.8rem; /* Средний заголовок */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    font-size: 1.4rem; /* Меньший заголовок */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.5rem; /* Четкий текст */
+    line-height: 1.8; /* Добавляем интерлиньяж для удобства чтения */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.841);
+}
+
+/* Интерактивные кнопки для ссылок */
+a.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+a.button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Стиль для значка VK */
+.social-icon {
+    display: inline-block;
+    background-color: #4A76A8; /* Цвет VK */
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #3B5998;
+    transform: scale(1.1);
+}
+
+/* Раскрывающееся меню */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для контраста */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem; /* Размер шрифта для ссылок в меню */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Уменьшаем размер заголовка для мобильных устройств */
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem; /* Уменьшаем размер текста для мобильных устройств */
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Интерактивные кнопки */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem; /* Увеличиваем размер кнопок */
+    font-size: 1.1rem; /* Размер шрифта для кнопок */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Форма контактов */
+#contact form {
+    display: grid;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 10 auto;
+}
+
+#contact input, #contact textarea {
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem; /* Размер шрифта для полей формы */
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Цвет placeholder */
+}
+
+/* Общий стиль для секции "Обо мне" */
+#about {
+    padding: 2rem 1rem;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    text-align: left;
+}
+
+/* Контейнер для фото и описания */
+.about-content {
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Размещаем элементы в ряд */
+    align-items: center; /* Выравниваем элементы по центру вертикально */
+    justify-content: center; /* Центрируем содержимое горизонтально */
+    gap: 2rem; /* Добавляем отступ между фото и текстом */
+    max-width: 1000px; /* Ограничиваем ширину контейнера */
+    margin: 0; /* Центрируем контейнер на странице */
+}
+
+/* Стили для фото */
+.about-image img {
+    width: 200px; /* Ширина фото */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 50%; /* Делаем фото круглым */
+    box-shadow: 0 4px 6px rgba(23, 22, 22, 0.3); /* Добавляем тень */
+}
+
+/* Стили для описания */
+.about-description {
+    flex: 1; /* Занимает всю доступную ширину */
+    text-align: left; /* Текст выровнен по левому краю */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* На маленьких экранах размещаем элементы вертикально */
+        align-items: center; /* Центрируем содержимое */
+    }
+
+    .about-image img {
+        width: 150px; /* Уменьшаем размер фото для мобильных */
+    }
+}

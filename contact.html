@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Репетитор по химии | Шакирова Ирина Хабировна</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Раскрывающееся меню -->
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section id="contact">
+            <h2>Свяжитесь со мной</h2>
+            <form id="contactForm" action="/submit_form" method="POST">
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                <textarea id="message" name="message" placeholder="Ваше сообщение"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Репетитор по химии | Шакирова Ирина Хабировна</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
